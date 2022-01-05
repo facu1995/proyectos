@@ -15,36 +15,39 @@
     <nav>
         <ul>
             <!-- <li><button class="carrito"><i class="fas fa-shopping-cart"></i> </button> -->
-                <!-- <a href="productos.html">Carrito</a> -->
+            <!-- <a href="productos.html">Carrito</a> -->
             </li>
-            <li><a  href="index.html">Cerrar sesión</a></li>
+            <li><a href="index.html">Cerrar sesión</a></li>
         </ul>
     </nav>
-    <div class="login">
-        <span id="respuesta"></span>
-        <h2>Ingrese su Usuario:</h2>
-        <div>
+    <div class="container">
+        <div class="login">
+            <div class="login-container">
+                <span id="respuesta"></span>
+                <h2>Ingrese su Usuario:</h2>
+                <div>
+                </div>
+                <div>
+                    <section>
+                        <input name="correo" id="correo" placeholder="correo" />
+                    </section>
+                    <section>
+                        <input name="nombre" id="nombre" placeholder="nombre" />
+                    </section>
+                    <section>
+                        <input name="pass" type="password" id="pass" placeholder="pass" />
+                    </section>
+                    <section>
+                        <br>
+                        <button class="sign-in" id="crear">
+                            <h4>Iniciar Sesion</h4>
+                        </button>
+                    </section>
+                </div>
+            </div>
         </div>
-        <div>
-            <section>
-                <input name="correo" id="correo" placeholder="correo" />
-            </section>
-            <section>
-                <input name="nombre" id="nombre" placeholder="nombre" />
-            </section>
-            <section>
-                <input name="pass" type="password" id="pass" placeholder="pass" />
-            </section>
-            <section>
-                <br>
-                <button class="sign-in" id="crear">
-                    <h4>Iniciar Sesion</h4>
-                </button>
-            </section>
-        </div>
-    </div>
-    <br>
-    <br>
+        <br>
+        <br>
         <section class="container-item ocultar">
             <h2>Hola 👨‍💻Usuario: <span id="respuesta2"></span></h2>
             <br>
@@ -58,7 +61,8 @@
             </div>
             <h2 class="total">Total: </h2>
         </section>
-        
+
+    </div>
     <script src="./main.js"></script>
 </body>
 

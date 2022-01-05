@@ -3,37 +3,72 @@
     padding: 0;
 }
 
+:root {
+    --Soft-Blue: hsl(231deg 30% 42% / 98%);
+    --blue:rgb(31 50 118);
+    --nav:hsl(231, 14%, 51%);
+    --bg:#060818eb;
+}
 html {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    width: 800px;
-    padding: 30px;
-    margin: 0 auto;
-}
+    /*     width: 800px;
+    margin: 0 auto; */
+    background: var(--bg);
+    color: white;
+    }
 
 nav {
+    background: var(--Soft-Blue);
     display: flex;
-    justify-content: end
+    height:40px;
 }
 
 ul {
     list-style: none;
     display: flex;
+    width: 1000px;
+    justify-content: end;
     align-items: center;
 }
 ul li{
     padding:0 10px
 }
-ul li button {
+ul li a {
     font-size:20px;
+    color:white;
+    text-decoration: none;
+
+}
+.container{
+        width: 800px;
+    margin: 0 auto;
 }
 
 .login{
-    width:400px;
-    margin:0 auto;
+    background-image: url(https://i.picsum.photos/id/737/2880/1920.jpg?hmac=J1s6x8nPJRLhI73881x3UfRnL7HN1QPF8GQLyun1nKM);
+    background-size: 154%;
+    background-position: -180px -98px;
+    background-repeat: no-repeat;
+    background-color: rgb(136 144 179 / 52%);
+    background-blend-mode: overlay;
+    height: 611px;
+    width: 690px;
+}
+.login-container{
+    background-color: rgb(35 70 102 / 70%);
+    background-blend-mode: overlay;
+    padding: 45px 25px 40px 25px;
+    position: relative;
+    left:50%;
+    top: 32%;
+    transform:translate(-50%,-25%);
+    width: 250px;
+    text-align: center;
+    color: #fff;
 }
 .login input{
     margin: 5px 0;
@@ -43,15 +78,18 @@ ul li button {
     padding:5px;
 }
 .product {
-    background: rgb(209, 230, 181);
+    background: var( --Soft-Blue);
     margin: 20px;
     padding: 20px;
+    border-radius: 7px;
+    /* color: rgb(0, 0, 0); */
 }
 
 .product-elegido {
-    background: rgb(230, 197, 108);
+    background: var(--blue);
     margin: 20px;
     padding: 20px;
+    border-radius: 7px;
 }
 
 .container-produts, .container-actuales {
@@ -73,6 +111,9 @@ p {
 
 h2 {
     margin: 5px 0;
+}
+.container-select{
+    margin: 5px 0 25px 0;
 }
 
 .no-login{

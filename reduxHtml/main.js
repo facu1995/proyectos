@@ -65,7 +65,7 @@ let store = Redux.createStore(reducer);
  */
 
 function component() {
-    document.getElementById("respuesta").innerHTML = JSON.stringify(store.getState());
+    document.getElementById("respuesta").innerHTML = JSON.stringify(store.getState().nombre);
 }
 
 //se registra el elemento/component/dom de escucha
