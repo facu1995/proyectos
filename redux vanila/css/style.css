@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 800px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: end
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+ul li{
+    padding:0 10px
+}
+ul li button {
+    font-size:20px;
+}
+
+.login{
+    width:400px;
+    margin:0 auto;
+}
+.login input{
+    margin: 5px 0;
+    padding:5px
+}
+.login button{
+    padding:5px;
+}
+.product {
+    background: rgb(209, 230, 181);
+    margin: 20px;
+    padding: 20px;
+}
+
+.product-elegido {
+    background: rgb(230, 197, 108);
+    margin: 20px;
+    padding: 20px;
+}
+
+.container-produts, .container-actuales {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add {
+    padding: 6px;
+}
+
+p {
+    padding: 4px 0;
+}
+
+.product button, .product-elegido button {
+    margin: 5px 0
+}
+
+h2 {
+    margin: 5px 0;
+}
+
+.no-login{
+    background:red;
+}
+
+.ocultar{
+    display: none;
+}

@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+:root {}
+
+
+/* Clases por defecto */
+
+.cuerpo-centrados {
+    width: 1200px;
+    margin: auto;
+}
+
+
+
+.superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px
+}
+
+.inferior {
+    background: #e7fcff;
+    width: 100%;
+    display: block;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.inferior ul {
+    background: #e7fcff;
+}
+
+.inferior ul li {
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "section1 section1 section2""section1 section1 section2""section3 section3 section3";
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    grid-area: section2;
+    margin: 40px 0 0 0;
+}
+
+.section3 {
+    grid-area: section3;
+}
+
+.card0>.card0 {}
+
+.card0>.imagen {
+    margin: 40px 20px;
+    background-image: url(../foto1.webp);
+    background-repeat: no-repeat;
+    /* width: 90%; */
+    height: 540px;
+    background-size: contain;
+}
+
+.card0>ul {
+    display: flex;
+    color: blue;
+    list-style: none;
+    font-size: 12px;
+    margin: 20px 0 5px 0;
+}
+
+.card0>h3 {
+    font-weight: 700;
+    font-size: 35px;
+    margin: 10px 0 10px 0;
+}
+
+.card0>p {
+    font-size: 23px;
+}
+
+.cards {
+    display: flex;
+
+}
+
+.card {
+    margin: 0 45px 0 0;
+}
+
+.section3 h3 {
+    margin: 10px 0;
+    font-size: 21px;
+}
+
+.card ul {
+    font-size: 11px
+}
+
+.card>.imagen {
+    width: 372px;
+    height: 189px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card>ul {
+    margin: 7px 0;
+    font-size: 13px;
+}
+
+.card>h3 {}
+
+.card>p {
+    font-size: 17px;
+}
+
+.card1>.imagen {
+    background-image: url(../foto2.webp);
+}
+
+.card2>.imagen {
+    background-image: url(../foto3.webp);
+}
+
+.card3>.imagen {
+    background-image: url(../foto4.webp);
+}
+
+.section2 h4 {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 0 20px 0;
+    letter-spacing: 1px;
+}
+
+article {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid rgb(83, 222, 235);
+    margin: 0 0 30px 0;
+}
+
+article h3 {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+article p {
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+
+@media screen and (max-width:800px) {
+    body {
+        background: red;
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cuerpo-centrados{
+        padding: 0 10%;
+    }
+
+    .section1 {
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+    .section2 {
+        grid-column: 1/-1;
+        grid-row: 2;
+    }
+    article{
+        width: 100%;
+    }
+    .section3 {
+        grid-column: 1/-1;
+        grid-row: 3;
+    }
+}

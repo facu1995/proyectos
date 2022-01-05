@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Soft-Blue: hsl(231, 69%, 60%);
+    --Soft-Red: hsl(0, 94%, 66%);
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Very-Dark-Blue: hsl(229, 31%, 21%);
+}
+
+html {
+    font-family: 'Bitter', serif;
+    font-size: 16px;
+}
+
+/* ROman ************ */
+nav {
+    background-color: white;
+    font-size: 0.8rem;
+    height: 80px;
+    width: 100vw;
+    line-height: 40px;
+    position: fixed;
+    z-index: 10;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 60px;
+    list-style: none;
+}
+
+nav.logo {
+    height: 20px;
+    width: 120px;
+    background-image: url(images/logo-bookmark.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.nav>li {
+    float: left;
+    padding: 0px 12px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+nav .login:hover {
+    border: solid var(--Soft-Red) 2px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: var(--Soft-Red);
+}
+
+nav li a:hover {
+    color: var(--Soft-Red);
+}
+
+nav .login {
+    border: solid var(--Soft-Red) 2px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--Soft-Red);
+}
+
+nav .login:hover {
+    color: var(--Soft-Red);
+    border: solid var(--Soft-Red) 2px;
+    background-color: white;
+}
+
+
+.section1 {
+    display: flex;
+    padding: 200px 0 0 0;
+    margin: 0px 0 225px 0;
+}
+
+.section1 .info {
+    width: 35%;
+    margin-left: 50px;
+}
+
+.section1 .botones {
+    margin-top: 50px;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    background-color: var(--Soft-Blue);
+    padding: 1rem 1rem;
+    border-radius: 5px;
+}
+
+.btn2 {
+    color: var(--Very-Dark-Blue);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    background-color: rgb(246, 244, 244);
+}
+
+.section1 .btn:hover {
+    background-color: white;
+    border: solid var(--Soft-Blue) 2px;
+    color: var(--Soft-Blue);
+
+}
+
+.section1 .btn2:hover {
+    border: solid var(--Very-Dark-Blue) 2px;
+    background-color: white;
+}
+
+.section1 .derecha {
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.section1 .derecha .caja-azul {
+    background: var(--Soft-Blue);
+    width: 400px;
+    height: 300px;
+    border-radius: 68px 0px 0px 90px;
+    position: absolute;
+    right: 0;
+}
+
+.section1 .derecha .img {
+    background-image: url(../images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 320px;
+    background-size: contain;
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    top: 180px;
+}
+
+
+/* Facundo 2  *********************************************************** */
+.section-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 170px 0;
+}
+
+.section-two .superior {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section-two .superior .h2 {
+    font-size: 2rem;
+}
+
+.section-two .superior p {
+    margin: 20px 0 59px 0;
+}
+
+.section-two .inferior {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-two .inferior .sidebar {
+    display: flex;
+    justify-content: center;
+}
+
+.section-two .inferior .sidebar ul {
+    display: flex;
+    list-style: none;
+}
+
+.section-two .inferior .sidebar ul li {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.section-two .inferior .sidebar ul li a {
+    padding: 10px 30px;
+}
+
+.section-two .inferior .sidebar ul li .active {
+    border-bottom: 2px solid var(--Soft-Red);
+    padding-bottom: -2px;
+}
+
+.section-two .inferior .contenido {
+    display: none;
+    margin: 72px 0 0 0;
+    width: 100%;
+}
+
+.section-two .inferior .contenido .izquierda {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    height: 339px;
+    position: relative;
+}
+
+.section-two .inferior .contenido .caja-azul {
+    background: var(--Soft-Blue);
+    width: 804px;
+    height: 263px;
+    border-radius: 0 68px 90px 0;
+    position: relative;
+    z-index: 2;
+    top: 70px;
+    right: 308px;
+    /* left: -182px; */
+}
+
+.section-two .inferior .contenido .img {
+    background-repeat: no-repeat;
+    width: 409px;
+    height: 323px;
+    background-size: contain;
+    position: absolute;
+    /* left: 57px; */
+    right: -13px;
+    z-index: 4;
+}
+
+.section-two .inferior .contenido .img1 {
+    background-image: url(../images/illustration-features-tab-1.svg);
+}
+
+.section-two .inferior .contenido .img2 {
+    background-image: url(../images/illustration-features-tab-2.svg)
+}
+
+.section-two .inferior .contenido .img3 {
+    background-image: url(../images/illustration-features-tab-3.svg)
+}
+
+.section-two .inferior .contenido .info {
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+    padding: 30px 51px 0px 66px;
+}
+
+.section-two .inferior .contenido .info h2 {}
+
+.section-two .inferior .contenido .info p {
+    padding: 20px 0 0 0;
+    width: 370px;
+}
+
+.section-two .inferior .contenido .info button {
+    margin: 20px 0 0 0;
+    margin-top: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--Soft-Blue);
+    font-size: 10px;
+    color: whitesmoke;
+    height: 30px;
+    border: none;
+    width: 74px;
+}
+
+
+/* Guille 3 *******************************/
+.section-3 {
+    margin: 20px 0 55px 0;
+}
+
+.cards {
+    width: 80rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    text-align: center;
+}
+
+.top {
+    text-align: center;
+    margin: 40px 0 40px 0;
+    line-height: 30px;
+}
+
+p {
+    color: rgb(165, 164, 164);
+}
+
+h5 {
+    margin: 20px 0 5px 0;
+}
+
+.img1 {
+    height: 70px;
+    padding: 30px 0 0 5px;
+}
+
+.chrome {
+    margin-top: 30px;
+    height: 250px;
+    width: 220px;
+    border-radius: 5%;
+    background: #fafbfc;
+    box-shadow: 0px 5px 50px 5px #b5b9bc;
+}
+
+.firefox {
+    margin-top: 60px;
+    height: 250px;
+    width: 220px;
+    border-radius: 5%;
+    background: #fafbfc;
+    box-shadow: 0px 5px 50px 5px #b5b9bc;
+}
+
+.opera {
+    margin-top: 90px;
+    height: 250px;
+    width: 220px;
+    border-radius: 5%;
+    background: #fafbfc;
+    box-shadow: 0px 5px 50px 5px #b5b9bc;
+}
+
+.add {
+    margin-top: 10px;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    background-color: var(--Soft-Blue);
+    height: 36px;
+    width: 180px;
+    font-size: 10px;
+    color: whitesmoke;
+}
+
+.dottedLine {
+    margin-top: 10px;
+}
+
+.add:hover {
+    background-color: white;
+    border: 2px solid var(--Soft-Blue);
+    color: black;
+}
+
+
+footer {
+    background-color: var(--Soft-Blue);
+    padding: 40px 0 0 0;
+    color: #fff;
+}
+
+footer .superior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .superior p {
+    font-size: 0.7rem;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+}
+
+footer .superior h3 {
+    /* padding: 30px 0 0 0; */
+    font-size: 2rem;
+}
+
+footer .superior .h3continuado {}
+
+footer .superior h3 {
+    margin: 0;
+}
+
+footer .superior .form {margin: 30px 0;}
+
+footer .superior .form input {
+    padding: 8px 15px;
+    width: 317px;
+}
+
+footer .superior .form button {
+    background: #f95959;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+footer .inferior {
+    display: flex;
+    background: #242946;
+    justify-content: space-around;
+}
+
+footer .inferior ul {
+    display: flex;
+    list-style: none;
+}
+
+footer .inferior ul li {
+    padding: 10px 20px;
+}

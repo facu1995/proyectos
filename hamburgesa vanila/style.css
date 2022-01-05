@@ -1,0 +1,201 @@
+:root{
+  --main-clr: rgb(207,57,57);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  text-align: center;
+  background-image: url(./img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(50,0,50,0.1);
+  background-blend-mode: overlay;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+nav{
+  background-color: var(--main-clr);
+  height: 100px;
+}
+
+nav ul img{
+  width: 120px;
+  height: 120px;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+ul li a{
+  position: relative;
+  top:-10px;
+  color:#000;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+ul li a:hover{
+  color: white;
+}
+
+main{
+  height: 75vh;
+  background-image: url("./img/bgmain.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main h1{
+  text-align: center;
+  color: #fff;
+
+  padding-top: 250px;
+  text-shadow: 0 0 5px black;
+  font-size: 4rem;
+}
+
+footer{
+  color:white;
+  height: 15vh;
+  background-color: rgba(150,40,50,1);
+}
+
+.container{
+  margin: auto;
+  width: 80%;
+  min-height: 70vh;
+}
+
+.containerFormulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  flex-direction: column;
+}
+.forminput{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.formulario label{
+  width: 15ch;
+}
+
+.forminput{
+  margin-bottom: 30px ;
+
+}
+
+form{
+  margin-top: 60px;
+  width:40%;
+}
+
+.footerUl{
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* cards */
+.gridContainer{
+  display: grid;
+  width: 80%;
+  margin: 50px auto;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+}
+
+.card{
+  max-width: 380px;
+  background-color: #fff;
+}
+
+.cardBody{
+  background-image: url(./img//bg2.jfif);
+  min-height: 450px;
+  background-position: center 25px;
+  background-size: cover;
+  background-color: white;
+  background-blend-mode: difference;
+  box-shadow: 0 0 8px 2px gray;
+}
+
+.cardBody:hover{
+  box-shadow: 0 0 5px 5px rgba(255,255,255,0.2);
+}
+
+.cardImgWrap{
+  background-color: var(--main-clr);
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+}
+.cardImg{
+  padding: 10px;
+  width: 100%;
+  border-radius: 1vw;
+}
+
+hr{
+  border: 1px solid var(--main-clr);
+  border-radius: 5px;
+  margin: 15px 30px;
+}
+
+.cardTitle{
+  color:#fff;
+  margin: 0 30px;
+  padding: 0 10px 15px 0;
+
+}
+.cardText{
+  font-style: italic;
+  color:#fff;
+  font-size: 1.4rem;
+  padding: 10px 0;
+  text-shadow: 0 0 6px var(--main-clr);
+ 
+}
+.cardPrice{
+  color:#fff;
+  font-size: larger;
+}
+
+.cardBtn{
+  font-size: larger;
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: var(--main-clr);
+  border: none;
+  border-radius: 10px;
+  transition: background-color .5s ;
+
+}
+
+.cardBtn:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,0);
+  color:#fff;
+  outline: 1px solid var(--main-clr);
+}
+
+.titulo{
+  margin: 50px 0;
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>redux</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen'
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <!-- <li><button class="carrito"><i class="fas fa-shopping-cart"></i> </button> -->
+                <!-- <a href="productos.html">Carrito</a> -->
+            </li>
+            <li><a  href="index.html">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+    <div class="login">
+        <span id="respuesta"></span>
+        <h2>Ingrese su Usuario:</h2>
+        <div>
+        </div>
+        <div>
+            <section>
+                <input name="correo" id="correo" placeholder="correo" />
+            </section>
+            <section>
+                <input name="nombre" id="nombre" placeholder="nombre" />
+            </section>
+            <section>
+                <input name="pass" type="password" id="pass" placeholder="pass" />
+            </section>
+            <section>
+                <br>
+                <button class="sign-in" id="crear">
+                    <h4>Iniciar Sesion</h4>
+                </button>
+            </section>
+        </div>
+    </div>
+    <br>
+    <br>
+        <section class="container-item ocultar">
+            <h2>Hola 👨‍💻Usuario: <span id="respuesta2"></span></h2>
+            <br>
+            <h1>Listado de productos</h1>
+            <div class="container-produts">
+            </div>
+        </section>
+        <section class="container-select ocultar">
+            <h1>Productos Seleccionados</h1>
+            <div class="container-actuales">
+            </div>
+            <h2 class="total">Total: </h2>
+        </section>
+        
+    <script src="./main.js"></script>
+</body>
+
+</html>
